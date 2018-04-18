@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.valentino.questionbankfeature1.SummaryFragment">
+
+    <TextView
+        android:id="@+id/summaryQuestionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:text="Question"
+        android:textSize="32dp"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/summarySelectedAnswerLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/summaryQuestionTextView"
+        android:textSize="24dp"
+        android:text="Initial Selected Answer: "/>
+
+    <TextView
+        android:id="@+id/summarySelectedAnswerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/summarySelectedAnswerLabel"
+        android:text="Answer A"
+        style="@style/AnswerText"
+        />
+
+    <TextView
+        android:id="@+id/summaryRationaleLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/summarySelectedAnswerText"
+        android:textSize="24dp"
+        android:text="Written Rationale: " />
+
+    <TextView
+        android:id="@+id/summaryWrittenRationale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/summaryRationaleLabel"/>
+
+    <TextView
+        android:id="@+id/summaryRevisedAnswerLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/summaryWrittenRationale"
+        android:textSize="24dp"
+        android:text="Revised Answer: " />
+
+    <TextView
+        android:id="@+id/summaryRevisedAnswerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/summaryRevisedAnswerLabel"
+        android:clickable="true"
+        android:text="Answer A"
+        style="@style/AnswerText"
+        />
+
+    <TextView
+        android:id="@+id/summaryCorrectAnswerLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/summaryRevisedAnswerText"
+        android:textSize="24dp"
+        android:text="Correct Answer: " />
+
+    <TextView
+        android:id="@+id/summaryCorrectAnswerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/summaryCorrectAnswerLabel"
+        android:clickable="true"
+        android:text="Answer A"
+        style="@style/AnswerText"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/summaryCorrectAnswerText"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:text="Difficulty"/>
+
+            <RatingBar
+                android:id="@+id/summaryRating1Bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                style="?android:attr/ratingBarStyleSmall"
+                android:clickable="false"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:text="Time Taken"/>
+
+            <RatingBar
+                android:id="@+id/summaryRating2Bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                style="?android:attr/ratingBarStyleSmall"
+                android:clickable="false"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+
+                android:text="Relevance"/>
+
+            <RatingBar
+                android:id="@+id/summaryRating3Bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                style="?android:attr/ratingBarStyleSmall"
+                android:clickable="false"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:text="Confidence"/>
+
+            <RatingBar
+                android:id="@+id/summaryRating4Bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1"
+                style="?android:attr/ratingBarStyleSmall"
+                android:clickable="false"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

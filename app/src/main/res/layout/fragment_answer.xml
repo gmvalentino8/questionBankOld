@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.valentino.questionbankfeature1.AnswerFragment">
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:layout_alignParentTop="true"
+        android:textSize="32dp"
+        android:layout_margin="5dp"/>
+
+
+    <TextView
+        android:id="@+id/selectAnswerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionTextView"
+        android:text="SelectedAnswer"
+        style="@style/AnswerText"/>
+
+    <TextView
+        android:id="@+id/selectAnswerRationale1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectAnswerTextView"
+        android:text="SelectedAnswer"
+        style="@style/RationaleText"/>
+
+    <TextView
+        android:id="@+id/selectAnswerRationale2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectAnswerRationale1"
+        android:text="SelectedAnswer"
+        style="@style/RationaleText"/>
+
+    <TextView
+        android:id="@+id/alternativeAnswerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectAnswerRationale2"
+        android:text="AlternativeAnswer"
+        style="@style/AnswerText"/>
+
+    <TextView
+        android:id="@+id/alternativeAnswerRationale1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alternativeAnswerTextView"
+        android:text="SelectedAnswer"
+        style="@style/RationaleText"/>
+
+    <TextView
+        android:id="@+id/alternativeAnswerRationale2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alternativeAnswerRationale1"
+        android:text="SelectedAnswer"
+        style="@style/RationaleText"/>
+
+</RelativeLayout>

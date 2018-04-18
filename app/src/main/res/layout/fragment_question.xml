@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.valentino.questionbankfeature1.QuestionFragment">
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:text="Question"
+        android:textSize="32dp"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/answerATextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionTextView"
+        android:clickable="true"
+        android:text="Answer A"
+        style="@style/AnswerText"
+        />
+
+    <TextView
+        android:id="@+id/answerBTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answerATextView"
+        android:clickable="true"
+        android:text="Answer B"
+        style="@style/AnswerText"
+        />
+
+    <TextView
+        android:id="@+id/answerCTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answerBTextView"
+        android:clickable="true"
+        android:text="Answer C"
+        style="@style/AnswerText"
+        />
+
+    <TextView
+        android:id="@+id/answerDTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answerCTextView"
+        android:clickable="true"
+        android:text="Answer D"
+        style="@style/AnswerText"
+        />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/rationaleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/answerDTextView"
+        android:layout_above="@id/submitButton"
+        android:hint="Enter your reasoning here"
+        android:gravity="top|left"/>
+
+
+
+</RelativeLayout>
